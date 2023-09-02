@@ -3,16 +3,9 @@ body {
   font-family: monospace;
 }
 
-.background {
-  z-index: -100;
-  background: url(../img/cover.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
 .shnkr-background {
   z-index: -100;
-  background: url(../img/shnkr_cover.png);
+  background: url(../img/shnkr_cover.jpg);
   background-position: center;
   background-size: cover;
 }

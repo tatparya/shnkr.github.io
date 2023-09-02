@@ -29,7 +29,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212121;
+  --bs-dark: #111111;
   --bs-primary-rgb: 41, 55, 240;
   --bs-secondary-rgb: 159, 26, 226;
   --bs-success-rgb: 25, 135, 84;
@@ -76,7 +76,7 @@
 }
 
 body {
-  background: var(--bs-gray-800);
+  background: var(--bs-dark);
   color: var(--bs-light);
 }
 
