@@ -5,7 +5,7 @@ body {
 
 .shnkr-background {
   z-index: -100;
-  background: url(../img/shnkr_cover.jpg);
+  background: url(../img/shnkr.png);
   background-position: center;
   background-size: cover;
 }
@@ -13,7 +13,7 @@ body {
 .fullscreen {
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
 }
 
@@ -50,7 +50,7 @@ body {
   padding: 2rem;
   border-radius: 10px;
   border: none;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); */
   transition: all 0.15s ease-in-out;
   -webkit-transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.15s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -187,11 +187,6 @@ body {
 }
 
 /*  Main Panel Styles */
-
-.row {
-  max-width: 80%;
-  margin-left: 10%;
-}
 
 .panel {
   display: table-cell;
