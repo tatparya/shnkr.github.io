@@ -11,14 +11,25 @@ var isInViewport = function(elem) {
 
 var findMe = document.querySelectorAll('.custom-card-panel');
 
-window.addEventListener('scroll', function(event) {
-// add event on scroll
-findMe.forEach(element => {
-    //for each .thisisatest
-    if (isInViewport(element)) {
-      //if in Viewport
-      element.classList.add("blur-img");
-      console.log("added");
-    }
+// window.addEventListener('scroll', function(event) {
+// // add event on scroll
+// findMe.forEach(element => {
+//     //for each .thisisatest
+//     if (isInViewport(element)) {
+//       //if in Viewport
+//       element.classList.add("blur-img");
+//       console.log("")
+//     }
+// });
+// }, false);
+
+window.addEventListener('scroll', function() {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 0) {
+    navbar.classList.add('scrolled');
+    navbar.classList.remove('scrolled-top');
+  } else {
+    navbar.classList.remove('scrolled');
+    navbar.classList.add('scrolled-top');
+  }
 });
-}, false);

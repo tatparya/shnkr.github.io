@@ -492,7 +492,8 @@ textarea {
   color: #777;
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 991px) {
   .custom-card-panel {
     padding: 0;
     padding-left: 0 !important;
@@ -522,11 +523,11 @@ textarea {
 
   section {
     padding: 0rem !important;
-    padding-bottom: 5rem !important;
+    /* padding-bottom: 5rem !important; */
   }
 
   .masthead {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     height: 30%;
   }
 

@@ -7,17 +7,42 @@
   scroll-snap-align: start;
 }
 
+
+
+div.bio-profile {
+  position: relative;
+}
+
+div.bio-profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0;
+  background-image: url(../img/bio-pic.png);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
 /* Show div on screens wider than 600px */
-@media (min-width: 992) {
+/* @media (min-width: 992) {
   .bio-profile {
     display: block;
   }
-}
+} */
 
 /* Hide div on screens smaller than 600px */
 @media (max-width: 991px) {
   .bio-profile {
     display: none;
+  }
+  .bio-profile::before {
+    border-radius: 10px;
+    position: relative;
   }
 }
 
@@ -27,4 +52,19 @@
 
 .soundcloud-embed {
     border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.scrolled-top {
+  background-color: transparent;
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+}
+
+.scrolled {
+  /* background-color: rgba(31, 31, 40, 1); */
+  background-image: url(../img/bio-pic.png);
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
 }
