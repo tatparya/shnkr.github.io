@@ -5,7 +5,7 @@ body {
 
 .shnkr-background {
   z-index: -100;
-  background: url(../img/shnkr.png);
+  background: url(../img/banner-01.jpg);
   background-position: center;
   background-size: cover;
 }
